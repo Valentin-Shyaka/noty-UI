@@ -5,6 +5,7 @@ import Login from './features/auth/Login';
 import DashLayout from './components/DashLayout';
 import NotesList from './features/notes/NotesList';
 import UsersList from './features/users/UsersList';
+import Welcome from './features/auth/Welcome';
 import './App.css';
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
             <Route path='users' >
               <Route index element={<UsersList/>}/>
             </Route>
-        </Route>
+        </Route>{/*End Dash */}
         </Route>
     </Routes>
   );
